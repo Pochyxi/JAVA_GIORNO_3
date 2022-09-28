@@ -1,14 +1,18 @@
 package defaultpack;
 import week1_day3.Class1;
 import week1_day3.animals.Dog;
-import java.util.*;
+import giorno3.epicode.util.MyArray;
 
 public class Giorno3 {
      public static void main(String[] args) {
-        Class1 a = new Class1();
-        a.stampaSomma();
-
-        Dog dog1 = new Dog();
-         System.out.println( dog1.name + " " + dog1.age );
+        MyArray arr = new MyArray(new int[] {2, 3, 4, 5});
+        arr.push(6);
+        arr.consoleLog();
+        arr.pop();
+        arr.consoleLog();
+        arr.unShift(44);
+        arr.consoleLog();
     }
+
+
 }
