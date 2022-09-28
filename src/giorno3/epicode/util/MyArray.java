@@ -9,8 +9,8 @@ public class MyArray {
     public MyArray(int[] _arr) {
         this.arr = _arr;
     }
-    public void consoleLog () {
-        System.out.println(Arrays.toString(this.arr));
+    public void consoleLog (String str) {
+        System.out.println(str + Arrays.toString(this.arr));
     }
     public int push(int el) {
         int[] newArr = new int[this.arr.length + 1];
@@ -48,5 +48,16 @@ public class MyArray {
         }
         this.arr = newArr;
         return el;
+    }
+
+    public int shift() {
+        int[] newArr = new int[ this.arr.length - 1 ];
+
+        for ( int i = 0; i < newArr.length; i++ ) {
+            newArr[ i ] = this.arr[ i + 1 ];
+        }
+
+        this.arr = newArr;
+        return this.arr[ 0 ];
     }
 }

@@ -1,18 +1,24 @@
 package defaultpack;
-import week1_day3.Class1;
-import week1_day3.animals.Dog;
 import giorno3.epicode.util.MyArray;
 
 public class Giorno3 {
      public static void main(String[] args) {
-        MyArray arr = new MyArray(new int[] {2, 3, 4, 5});
-        arr.push(6);
-        arr.consoleLog();
-        arr.pop();
-        arr.consoleLog();
-        arr.unShift(44);
-        arr.consoleLog();
+         MyArray arr = new MyArray( new int[] { 2 , 3 , 4 , 5 } );
+         arr.push( 6 ); // metodo push()
+         arr.consoleLog("eseguito push ");
+         arr.pop(); // metodo pop()
+         arr.consoleLog("eseguito pop ");
+         arr.unShift( 44 ); // metodo unshift()
+         arr.consoleLog("eseguito unShift ");
+         arr.shift();
+         arr.consoleLog( "eseguito shift" );
     }
 
 
 }
+
+
+
+
+
+
