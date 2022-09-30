@@ -45,7 +45,7 @@ public class Giorno3 {
              switch (command) {
 
                  case 1:
-                     System.out.println("quale elemento vuoi interire?");
+                     System.out.println("quale elemento vuoi inserire?");
                      arr.push( Integer.parseInt( scanner.nextLine() ) );
                      arr.consoleLog( "eseguito push" );
 
@@ -63,7 +63,7 @@ public class Giorno3 {
 
                      break;
                  case 2:
-                     System.out.println("quale elemento vuoi interire?");
+                     System.out.println("quale elemento vuoi inserire?");
                      arr.unShift( Integer.parseInt( scanner.nextLine() ) );
                      arr.consoleLog( "eseguito unShift" );
 
